@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section>
+        <div class="container">
+            <div class="details">
+                <h1 class="temp">30</h1>
+                <h1 class="status">cloudy</h1>
+                <div class="more-info">
+                    <p>info-1</p>
+                    <p>info-2</p>
+                    <p>info-3</p>
+                    <p>info-4</p>
+                </div>
+                <form>
+                    <input type="text" placeholder="search location..." name="location">
+                    <button type="submit">check</button>
+                    <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                </form>
+            </div>
+        </div>
+    </section>
 
-    <div class="location">
-        <h1 class="location-timezone">timezone</h1>
-        <p>Icon</p>
-    </div>
-
-    <div class="temperature">
-        <div class="degree-section">
-        <h2 class="temperature-degree">34</h2>
-        <span></span>
-    </div>
-        <div class="temperature-description">Its friggin cold</div>
-    </div>
-
-    <script src="app.js"></script>
 </body>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </html>
