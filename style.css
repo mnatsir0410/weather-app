@@ -1,47 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Montserrat:wght@500&family=Roboto:ital,wght@1,500&display=swap');
+
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-body {
-    height: 100vh;
+html{
+    font-family: 'Merriweather Sans';
+    font-weight: 500;
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
     display: flex;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    padding: 100px;
+}
+
+.container{
+    width: 90%;
+    max-width: 400px;
+    background-color: #00919f;
+    margin: 0   auto;
+    height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
-    font-family: sans-serif;
-    color: white;
+    overflow: hidden;
 }
 
-.location, 
-.temperature {
-    height: 30vh;
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.container::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 120%;
+    width: 120%;
 }
 
-.temperature {
-    flex-direction: column;
-}
-
-.degree-section{
-    display: flex;
-    align-items: center;
-    cursor: pointer; 
-
-}
-
-.degree-section span{
-    margin: 10px;
-    font-size: 30px;
-
-}
-
-.degree-section h2{
-    font-size: 40px;
-
+form{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
